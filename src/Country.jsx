@@ -1,6 +1,10 @@
 import PropTypes from "prop-types";
 
-export function Country({ countryname }) {
+import { useParams } from "react-router-dom";
+
+export function Country() {
+  let { countryname } = useParams();
+  console.log(countryname);
   return (
     <div>
       <h2>Country</h2>
